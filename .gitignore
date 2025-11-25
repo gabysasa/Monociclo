@@ -1,0 +1,64 @@
+# Archivos de simulación
+*.vcd
+*.vvp
+*.wdb
+*.wcfg
+*.log
+
+# Archivos temporales de Verilog
+*.vpp
+*.vpw
+*.bak
+*~
+
+# Carpetas de herramientas de síntesis
+work/
+simulation/
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+*.rpt
+*.summary
+
+# Archivos de Quartus (Intel/Altera)
+*.qws
+*.sof
+*.pof
+*.jdi
+*.pin
+*.done
+*.qdf
+*.qarlog
+*.htm
+*.html
+*.eqn
+*.json
+
+# Archivos de Vivado (Xilinx)
+*.jou
+*.str
+*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+.Xil/
+
+# Archivos de ModelSim/QuestaSim
+vsim.wlf
+transcript
+modelsim.ini
+work/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Carpetas de IDEs
+.vscode/
+.idea/
+*.code-workspace
