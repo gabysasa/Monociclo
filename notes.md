@@ -48,10 +48,11 @@ Ahora: <bd>
 
 **2. Evolución del diseño del cpu_top** <bd>
 
- Versión 1 / implementación mínima:
+ _Versión 1 / implementación mínima:_
+ 
   La primera versión mostraba únicamente el Program Counter (PC), útil para hacer una validación básica.
 
- Versión 2 / versión extendida:
+ _Versión 2 / versión extendida:_
 
 Se integraron más señales internas para depuración:<bd>
 
