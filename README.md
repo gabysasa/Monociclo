@@ -63,16 +63,15 @@ La simulación se realizó en Visual Studio Code usando el complemento WaveTrace
 - Visualizador de señales .vcd
 
 _1. Compilar la simulación_
-<dl>
-<dt>Ubicarse en la carpeta principal del proyecto y ejecutar: </dt>
 
-<dd>iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f</dd>
-</dl>
+Ubicarse en la carpeta principal del proyecto y ejecutar: 
 
-_2.Ejecutar la simulación_
+**iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f**
+
+_2. Ejecutar la simulación_
 
 con:<br>
-vvp sim\cpu_top_tb.vvp <br>
+**vvp sim\cpu_top_tb.vvp** <br>
 (Esto generará automáticamente un archivo cpu_top_tb.vpp y un archivo cpu_top_tb.vcd donde se pueden visualizar las señales generadas)
 
 
