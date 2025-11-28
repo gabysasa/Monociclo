@@ -17,6 +17,7 @@ El objetivo principal es:
 
 
 ## Estructura del repositorio
+```text
 Monociclo_final/
 │
 ├── sim/               #Acá van todos los archivos .vvp y .vcd generados por los testbench
@@ -47,7 +48,8 @@ Monociclo_final/
 ├── sim_files.f                      # Archivo opcional para simulación
 ├── .gitignore                       # Ignora archivos .vcd y .vvp
 └── README.md
-## Nota:
+```
+Nota:
 Los archivos generados por simulación como .vcd (señales) y .vvp (binario de simulación) sí fueron generados, pero no aparecen en el repositorio porque están incluidos en .gitignore, lo cual es una práctica recomendada para evitar subir archivos pesados o temporales generados automáticamente.
 
   
