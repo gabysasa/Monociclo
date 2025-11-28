@@ -64,10 +64,8 @@ module registers_unit_tb();
         #1;
         $display("Leer R5 → %d (esperado 123)", RURs1);
 
-        // =============================
-        // FORWARDING!
         // Rs1 = Rd antes del flanco de reloj
-        // =============================
+    
         Rs1 = 10;     
         Rs2 = 0;
         RUWr = 1;
