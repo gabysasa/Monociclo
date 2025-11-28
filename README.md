@@ -1,4 +1,4 @@
-# Proyecto CPU RISC-V en Verilog
+# Proyecto CPU RISC-V en Verilog - Arquitectura de Computadores
 
 Este proyecto implementa un procesador monociclo compatible con el subconjunto de instrucciones **RV32I** de RISC-V, desarrollado completamente en **SystemVerilog** y con soporte para instrucciones tipo R, I, S, B, U y J. 
 Incluye módulos como unidad de control, ALU, generador de inmediatos, PC, memoria de instrucciones, memoria de datos, unidad de registros y lógica de branch.
@@ -62,19 +62,76 @@ La simulación se realizó en Visual Studio Code usando el complemento WaveTrace
 
 - Visualizador de señales .vcd
 
-_1. Compilar la simulación_
+**_1. Compilar la simulación_**
 
 Ubicarse en la carpeta principal del proyecto y ejecutar: 
 
 **iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f**
 
-_2. Ejecutar la simulación_
+**_2. Ejecutar la simulación_**
 
 con:<br>
 **vvp sim\cpu_top_tb.vvp** <br>
 (Esto generará automáticamente un archivo cpu_top_tb.vpp y un archivo cpu_top_tb.vcd donde se pueden visualizar las señales generadas)
 
 
+## Síntesis y prueba física en FPGA (Quartus Prime)
 
+La implementación física se realizó en la DE1-SoC, utilizando Quartus Prime.
+
+El flujo seguido fue:
+
+**1. Crear un proyecto nuevo en Quartus**
+
+Importar todos los archivos del directorio src/.
+
+**2. Seleccionar el Top Level**
+cpu_top.sv
+
+**3. Asignar pines según el manual de la DE1-SoC**
+- Señal	FPGA
+- CLOCK_50	PIN del reloj de 50 MHz
+- KEY: Botones KEY[0] y KEY[1]
+- SW: Switches SW[0]-SW[3]
+- HEX0–HEX5:	Displays de 7 segmentos
+
+**4. Compilar con "Start Compilation"**
+
+Quartus sintetizará todo el procesador y generará el archivo .sof.
+
+**5. Cargar el diseño a la FPGA**
+
+Usar Quartus Programmer:
+
+- Seleccionar el archivo .sof
+
+- Cargar en la FPGA
+
+**6. Ejecución del programa en hardware real**
+
+El procesador ejecuta automáticamente el contenido de "instrucciones_verilog.mem" donde está contenido el programa y los resultados se visualizan en los displays 7 segmentos según la programación de los switches y botones.
+
+
+## Dependencias
+
+- Icarus Verilog
+
+- WaveTrace (extensión de VS Code)
+
+- Visual Studio Code
+
+- Quartus Prime Lite
+
+- FPGA DE1-SoC
+
+## Reproducción de Resultados
+Para reproducir los resultados se debe: 
+
+1. Clonar el repositorio.
+2. Abrirlo en VS Code.
+3. Compilar y simular con WaveTrace.
+4. Modificar instrucciones_verilog.mem según el programa deseado.
+5. Sintetizar en Quartus y cargar el .sof en la DE1-SoC.
+6. Observar el comportamiento en los displays HEX y entradas físicas.
 
 
