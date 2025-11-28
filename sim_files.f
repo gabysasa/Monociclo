@@ -1,0 +1,11 @@
+tb/cpu_top_tb.sv
+src/cpu_top.sv
+src/pc.sv
+src/instruction_memory.sv
+src/cu.sv
+src/immediategenerator.sv
+src/registers_unit.sv
+src/alu.sv
+src/datamemory.sv
+src/branch_unit.sv
+src/hex7seg.sv
