@@ -66,7 +66,7 @@ _1. Compilar la simulación_
 
 Ubicarse en la carpeta principal del proyecto y ejecutar: 
 
-iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f
+<dd>iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f</dd>
 
 _2.Ejecutar la simulación_
 
