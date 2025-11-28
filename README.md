@@ -48,7 +48,7 @@ Monociclo_final/
 ├── .gitignore                       # Ignora archivos .vcd y .vvp
 └── README.md
 ```
-Nota: [!NOTE]
+ [!NOTE]
 Los archivos generados por simulación como .vcd (señales) y .vvp (binario de simulación) sí fueron generados dentro de una carpeta "sim/", pero no aparecen en el repositorio porque están incluidos en .gitignore, lo cual es una práctica recomendada para evitar subir archivos pesados o temporales generados automáticamente.
 
   
@@ -62,7 +62,7 @@ La simulación se realizó en Visual Studio Code usando el complemento WaveTrace
 
 - Visualizador de señales .vcd
 
-<u>1. Compilar la simulación
+_1. Compilar la simulación_
 
 Desde la carpeta principal:
 
