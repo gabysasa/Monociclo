@@ -58,14 +58,14 @@ module cpu_top (
 );
 
     // Immediate generator: le pasamos instr[31:7] (25 bits)
-    immediate_generator IMM (
+    immediategenerator IMM (
         .instruction_31_7(instr[31:7]),
         .ImmSrc(ImmSrc),
         .imm_ext(imm_ext)
     );
 
     // Register file (Rs1 = instr[19:15], Rs2 = instr[24:20], Rd = instr[11:7])
-    RegistersUnit RF (
+    registers_unit RF (
         .clk(clk),
         .RUWr(RUWr),
         .Rs1(instr[19:15]),
@@ -89,7 +89,7 @@ module cpu_top (
     );
 
     // Data memory
-    data_memory DM (
+    datamemory DM (
         .clk(clk),
         .DMWr(DMWr),
         .DMCtrl(DMCtrl),
