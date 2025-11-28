@@ -4,7 +4,7 @@
 Inicialmente algunos archivos tenían nombres diferentes al de su módulo interno, lo que generaba confusión y advertencias en herramientas de simulación.
 Se decidió uniformar los nombres, manteniendo:
 
- archivo.sv  ==  nombre_del_modulo<bd>
+ archivo.sv  ==  nombre_del_modulo <bd>
 Esto mejoró la organización y permitió una integración más limpia en sim_files.f y en Quartus.
 
 **2. Carga de instrucciones desde archivo:**
