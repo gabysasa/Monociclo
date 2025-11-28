@@ -6,7 +6,7 @@ module immediategenerator_tb;
     reg  [2:0]  ImmSrc;
     wire [31:0] imm_ext;
 
-    // Instancia del DUT
+    // Instancia del uut
     immediategenerator uut (
         .instruction_31_7(instruction_31_7),
         .ImmSrc(ImmSrc),
