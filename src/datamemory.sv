@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module data_memory(
+module datamemory(
     input  wire         clk,
     input  wire         DMWr,
     input  wire  [2:0]  DMCtrl,
