@@ -20,7 +20,6 @@ El objetivo principal es:
 ```text
 Monociclo_final/
 │
-├── sim/               #Acá van todos los archivos .vvp y .vcd generados por los testbench
 ├── src/               # Módulos del procesador en SystemVerilog
 │   ├── alu.sv
 │   ├── branch_unit.sv
@@ -49,8 +48,8 @@ Monociclo_final/
 ├── .gitignore                       # Ignora archivos .vcd y .vvp
 └── README.md
 ```
-Nota:
-Los archivos generados por simulación como .vcd (señales) y .vvp (binario de simulación) sí fueron generados, pero no aparecen en el repositorio porque están incluidos en .gitignore, lo cual es una práctica recomendada para evitar subir archivos pesados o temporales generados automáticamente.
+Nota: [!NOTE]
+Los archivos generados por simulación como .vcd (señales) y .vvp (binario de simulación) sí fueron generados dentro de una carpeta "sim/", pero no aparecen en el repositorio porque están incluidos en .gitignore, lo cual es una práctica recomendada para evitar subir archivos pesados o temporales generados automáticamente.
 
   
 ## Cómo compilar y simular
@@ -63,7 +62,7 @@ La simulación se realizó en Visual Studio Code usando el complemento WaveTrace
 
 - Visualizador de señales .vcd
 
-<u>1. Compilar la simulación</u>
+<u>1. Compilar la simulación
 
 Desde la carpeta principal:
 
