@@ -68,10 +68,11 @@ _1. Compilar la simulación_
 
 <dd>iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f</dd>
 </dl>
+
 _2.Ejecutar la simulación_
 
-con:
-vvp sim\cpu_top_tb.vvp
+con:<br>
+vvp sim\cpu_top_tb.vvp <br>
 (Esto generará automáticamente un archivo cpu_top_tb.vpp y un archivo cpu_top_tb.vcd donde se pueden visualizar las señales generadas)
 
 
