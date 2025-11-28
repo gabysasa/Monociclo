@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module immediate_generator(
+module immediategenerator(
     input  wire [24:0] instruction_31_7, // instruction[31:7] (25 bits)
     input  wire [2:0]  ImmSrc,
     output reg  [31:0] imm_ext
