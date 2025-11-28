@@ -1,4 +1,4 @@
-module RegistersUnit(
+module registers_unit(
     input  logic clk, RUWr,
     input  logic [4:0] Rs1, Rs2, Rd,
     input  logic [31:0] DataWr,
