@@ -48,7 +48,7 @@ Monociclo_final/
 ├── .gitignore                       # Ignora archivos .vcd y .vvp
 └── README.md
 ```
- [!NOTE]
+Nota:
 Los archivos generados por simulación como .vcd (señales) y .vvp (binario de simulación) sí fueron generados dentro de una carpeta "sim/", pero no aparecen en el repositorio porque están incluidos en .gitignore, lo cual es una práctica recomendada para evitar subir archivos pesados o temporales generados automáticamente.
 
   
@@ -64,9 +64,15 @@ La simulación se realizó en Visual Studio Code usando el complemento WaveTrace
 
 _1. Compilar la simulación_
 
-Desde la carpeta principal:
+Ubicarse en la carpeta principal del proyecto y ejecutar: 
 
+iverilog -g2012 -o sim/cpu_top_tb.vvp -f sim_files.f
 
+_2.Ejecutar la simulación_
+
+con:
+vvp sim\cpu_top_tb.vvp
+(Esto generará automáticamente un archivo cpu_top_tb.vpp y un archivo cpu_top_tb.vcd donde se pueden visualizar las señales generadas)
 
 
 
