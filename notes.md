@@ -43,7 +43,7 @@ Antes: <bd>
 
 Ahora: <bd>
 
-**register_file.v → módulo register_file**
+**register_file.sv → módulo register_file**
 
 
 **2. Evolución del diseño del cpu_top** <bd>
