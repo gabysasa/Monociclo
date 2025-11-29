@@ -97,7 +97,7 @@ cpu_top.sv
 
 **4. Compilar con "Start Compilation"**
 
-Quartus sintetiza todo el procesador y generará el archivo .sof.
+Quartus sintetiza todo el procesador y genera el archivo .sof.
 
 **5. Cargar el diseño a la FPGA**
 
