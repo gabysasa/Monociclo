@@ -10,7 +10,7 @@ El objetivo principal es:
 
 - Diseñar una arquitectura simple estilo monociclo.
 - Implementar los módulos fundamentales: PC, Instruction Memory, ALU, Register Unit, Immediate Generator, Control Unit, Data Memory, etc.
-- Simular y verificar el funcionamiento del cada uno de los módulos y del procesador mediante testbenches y archivos VPP y VCD.
+- Simular y verificar el funcionamiento de cada uno de los módulos y del procesador mediante testbenches y archivos VPP y VCD.
 - Cargar un programa real desde un archivo .mem
 - Sintetizar el diseño en Quartus Prime
 - Ejecutarlo físicamente en la DE1-SoC, utilizando botones, switches y displays HEX para observación del resultado
